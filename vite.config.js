@@ -140,7 +140,7 @@ export default defineConfig(async () => {
       proxy: {
         // 手机号验证码接口需要以 ucenter-app-server Host 路由。
         "/api/hortor-ucenter": {
-          target: "https://comb-platform.hortorgames.com",
+          target: "https://ucenter-app-server.hortorgames.com",
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api\/hortor-ucenter/, ""),
           secure: true,

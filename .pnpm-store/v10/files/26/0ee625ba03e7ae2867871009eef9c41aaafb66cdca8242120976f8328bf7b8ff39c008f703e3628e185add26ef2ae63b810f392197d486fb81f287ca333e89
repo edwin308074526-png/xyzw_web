@@ -1,0 +1,46 @@
+{
+  "name": "event-emitter3",
+  "version": "1.0.4",
+  "description": "Event-Emitter3 focuses on performance while maintaining a Node.js compatible interface.",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "find benchmarks/run -name '*.js' -exec benchmarks/start.sh {} \\;",
+    "test": "nyc --reporter=html --reporter=text mocha test/test.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucky-libora/eventemitter3"
+  },
+  "keywords": [
+    "EventEmitter",
+    "EventEmitter2",
+    "EventEmitter3",
+    "Events",
+    "addEventListener",
+    "addListener",
+    "emit",
+    "emits",
+    "emitter",
+    "event",
+    "once",
+    "pub/sub",
+    "publish",
+    "reactor",
+    "subscribe"
+  ],
+  "author": "Aleksey Vasilyev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucky-libora/eventemitter3/issues"
+  },
+  "pre-commit": "test",
+  "devDependencies": {
+    "assume": "~1.5.0",
+    "mocha": "~3.4.0",
+    "nyc": "~11.0.1"
+  }
+}
